@@ -16,6 +16,7 @@ int main()
 	getline(inFile1, line1);
 	getline(inFile2, line2);
 	outFile.open("Merged File.txt");
+		outFile << line1 << line2 << endl;
 
 	return 0;
 }

@@ -132,6 +132,7 @@
   <ItemGroup>
     <Text Include="File 1.txt" />
     <Text Include="File 2.txt" />
+    <Text Include="Merged File.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
