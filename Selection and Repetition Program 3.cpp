@@ -13,10 +13,17 @@ int main()
 {
 	inFile1.open("File 1.txt");
 	inFile2.open("File 2.txt");
-	getline(inFile1, line1);
-	getline(inFile2, line2);
-	outFile.open("Merged File.txt");
-		outFile << line1 << line2 << endl;
 
+	
+	outFile.open("Merged File.txt");
+
+	while (!inFile1.eof() && !inFile2.eof())
+	{
+			getline(inFile1, line1);
+			getline(inFile2, line2);
+			
+			outFile << line1 << endl;
+			outFile << line2 << endl;	
+	}
 	return 0;
 }
