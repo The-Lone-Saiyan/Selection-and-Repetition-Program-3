@@ -7,7 +7,7 @@ using namespace std;
 
 ifstream inFile1, inFile2;
 ofstream outFile;
-string line1, line2;
+string Line1, Line2;
 
 int main()
 {
@@ -19,11 +19,11 @@ int main()
 
 	while (!inFile1.eof() && !inFile2.eof())
 	{
-		getline(inFile1, line1);
-		getline(inFile2, line2);
+		getline(inFile1, Line1);
+		getline(inFile2, Line2);
 			
-		outFile << line1 << endl;
-		outFile << line2 << endl;	
+		outFile << Line1 << endl;
+		outFile << Line2 << endl;	
 	}
 	return 0;
 }
