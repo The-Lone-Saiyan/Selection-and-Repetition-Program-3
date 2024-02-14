@@ -19,11 +19,11 @@ int main()
 
 	while (!inFile1.eof() && !inFile2.eof())
 	{
-			getline(inFile1, line1);
-			getline(inFile2, line2);
+		getline(inFile1, line1);
+		getline(inFile2, line2);
 			
-			outFile << line1 << endl;
-			outFile << line2 << endl;	
+		outFile << line1 << endl;
+		outFile << line2 << endl;	
 	}
 	return 0;
 }
