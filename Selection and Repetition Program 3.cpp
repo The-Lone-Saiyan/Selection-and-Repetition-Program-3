@@ -13,7 +13,6 @@ int main()
 {
 	inFile1.open("File 1.txt");
 	inFile2.open("File 2.txt");
-
 	
 	outFile.open("Merged File.txt");
 
@@ -25,5 +24,7 @@ int main()
 		outFile << Line1 << endl;
 		outFile << Line2 << endl;	
 	}
+
+	inFile1.close("File 1.txt");
 	return 0;
 }
